@@ -1,0 +1,21 @@
+.container.marketing {
+    overflow: hidden; /* Prevents the container from limiting horizontal scroll */
+}
+
+.horizonal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+    width: 100%; /* Ensure row takes up full width for scrolling */
+    border: 10px solid black;
+}
+
+.horizontal-scroll .col-lg-4 {
+    flex: 0 0 auto;
+    overflow-x: auto;
+    min-width: 250px;
+    white-space: wrap;
+    width: auto; /* Prevents Bootstrap grid from overriding min-width */
+}
